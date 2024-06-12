@@ -1,0 +1,6 @@
+Flask==3.0.3
+opencv-python==4.10.0.82
+Pillow==10.3.0
+scipy==1.13.1
+imgbeddings==0.1.0
+tensorflow==2.16.1

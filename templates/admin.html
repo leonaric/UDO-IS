@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDO-IS | ADMINISTRATOR</title>
+    <link rel="shortcut icon" href="../static/logo-170x172.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1><img src="../static/logo-170x172.png" alt=""> UDO-IS</h1>
+        <div class="options">
+            <div class="option" active="true">
+                <img src="../static/png/006-dashboard.png" alt="">
+                <p>Dashboard</p>
+            </div>
+            <div class="option">
+                <img src="../static/png/002-user.png" alt="">
+                <p>Manage Users</p>
+            </div>
+            <div class="option">
+                <img src="../static/png/005-hamburger.png" alt="">
+                <p>Sign-up Users</p>
+            </div>
+            <div class="option">
+                <img src="../static/png/007-gear.png" alt="">
+                <p>Settings</p>
+            </div>
+            <div class="option">
+                <img src="../static/png/009-user-interface.png">
+                <p>Notifications</p>
+            </div>
+        </div>
+        <div class="btm">
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">gmail</a>
+        </div>
+    </div>
+    <div class="sidebar_show" id="dash">
+        <div class="m_tab">
+            <h1>Manage Users</h1>
+            <p>Add, remove and disconnect users within the main database</p>
+        </div>
+        <div class="m_tab">
+            <h1>Notifications</h1>
+            <p>See all messages, alerts and warnings caused by users in your system</p>
+        </div>
+        <div class="m_tab">
+            <h1>Sign-up Users</h1>
+            <p>Register new candidates for the system, with face recognition included</p>
+        </div>
+        <div class="m_tab">
+            <h1>Settings</h1>
+            <p>Change / Modify administrative controls and preferences based on your needs</p>
+            <button>Update</button>
+        </div>
+    </div>
+    <div class="sidebar_show" style="display: none;">
+        <div class="show_top">
+            <div class="title">
+                <h1>Users</h1>
+                <p>10 users found</p>
+            </div>
+            <div class="admin_det">
+                <h1>Welcome, Administrator <img src="../static/admin.png" alt=""></h1>
+                <div class="main">
+                    <div class="input">
+                        <input spellcheck="false" placeholder="Looking for someone?.. " type="text">
+                        <img src="../static/search.png" alt="">
+                    </div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="show_det">
+            <div class="t_opt">
+                <p active="true">All users</p>
+                <p>Active users</p>
+                <p>Inactive users</p>
+                <p>Blocked users</p>
+            </div>
+            <select name="" id="">
+                <option value="current">Current</option>
+                <option value="yesterday">Yesterday</option>
+                <option value="last weeks">Last week</option>
+                <option value="last month">Last Month</option>
+            </select>
+        </div>
+        <div class="show_main">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="id">ID</td>
+                        <td class="name">Name</td>
+                        <td class="addr">Address</td>
+                        <td class="status">Status</td>
+                        <td class="action">Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>#6748</td>
+                        <td>JOHNATHAN PETER</td>
+                        <td>33.234.999.1, Dodoma, TZ</td>
+                        <td active="false">Inactive</td>
+                        <td>
+                            <img src="../static/png/008-remove.png" title="Delete profile" alt="">
+                            <img src="../static/png/001-settings.png" alt="">
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="sidebar_show" style="display: none;">
+        <div class="frrAlgoo" active="false" style="display: none;">
+            <p class="browser">Browse... <img src="..\\static\\png\\dots.png" alt="" title="attach FR folder"></p>
+            <video autoplay></video>
+            <p class="tag">click capture, to capture the intended action</p>
+            <p class="submit">CAPTURE</p>
+            <img class="logo" src="..\\static\\png\\pngwing.com (19).png" alt="">
+        </div>
+        <h2>Basic Details</h2>
+
+        <div class="inputsec">
+            <form class="f_col">
+                <div class="cool_inp">
+                    <input style="text-transform: uppercase;" placeholder=" " type="text" spellcheck="false">
+                    <p class="placeholder">First Name</p>
+                    <p class="line"></p>
+                </div>
+                <div class="cool_inp">
+                    <input placeholder=" " type="text" spellcheck="false">
+                    <p class="placeholder">User Name</p>
+                    <div class="line"></div>
+                </div>
+                <div class="cool_inp">
+                    <input placeholder=" " type="email" spellcheck="false">
+                    <p class="placeholder">Email ID</p>
+                    <div class="line"></div>
+                </div>
+            </form>
+            <form class="f_col">
+                <div class="cool_inp">
+                    <input style="text-transform: uppercase;" placeholder=" " type="text" spellcheck="false">
+                    <p class="placeholder">Last Name</p>
+                    <div class="line"></div>
+                </div>
+                <div class="cool_inp">
+                    <input placeholder=" " type="password" spellcheck="false">
+                    <p class="placeholder">Password</p>
+                    <div class="line"></div>
+                </div>
+                <div class="cool_inp">
+                    <input placeholder=" " type="password" spellcheck="false">
+                    <p class="placeholder">Repeat Password</p>
+                    <div class="line"></div>
+                </div>
+            </form>
+        </div>
+        <div class="pbt">
+            <p class="f_btn" onclick="resetInps()">Reset All</p>
+            <button onclick="callFR()">CONTINUE</button>
+        </div>
+    </div>
+    <div class="sidebar_show" style="display: none;"></div>
+    <div class="sidebar_show" style="display: none;"></div>
+    <div class="sidebar_show" style="display: none;"></div>
+    <p style="position: absolute;bottom: 10px; right: 30px;color: rgba(0, 0, 255, 0.384);font-size: 13px;text-decoration: underline;cursor: pointer;">All rights reserved | @2024 University of Dodoma</p>
+</body>
+<script>
+    function callFR(){
+        let frrAlgoo = document.querySelector(".frrAlgoo");
+        let countDown = 0;
+        let c_list = ["take a frontal view capture,center your head", "take a 3/4 sideview capture, left side",  "take a 3/4 sideview capture, right side", "smile at the camera", "now finish by looking down."]
+        const allInps = document.querySelectorAll(".inputsec input");
+        if (allInps[0].value != "") {
+
+            frrAlgoo.removeAttribute("style");
+            setTimeout(()=>{
+                frrAlgoo.removeAttribute("active");
+            }, 100);
+
+            let vidShow = document.querySelector("video");
+            let vidTag = document.querySelector(".frrAlgoo .tag");
+            let submitVid = document.querySelector(".frrAlgoo .submit");
+            let canvas = document.createElement("canvas");
+            let ctx = canvas.getContext("2d");
+            let stream;
+
+            navigator.mediaDevices.getUserMedia({video:true}).then((mediaStream)=>{
+                stream = mediaStream;
+                vidShow.srcObject = stream;
+            }).catch((err)=>{
+                console.error(err);
+            });
+
+            canvas.width = vidShow.clientHeight;
+            canvas.width = vidShow.clientWidth;
+            let all_photos = "";
+            submitVid.addEventListener("click", ()=>{
+                if(submitVid.innerText == "COMPLETE"){
+                    frrAlgoo.setAttribute("active", "false");
+                    frrAlgoo.style.display = "none";
+                    if (stream) {
+                        stream.getTracks().forEach(track => track.stop());
+                        stream = null;
+                    };
+                    setTimeout(()=>{
+                        submitVid.innerText = "CAPTURE";
+                        vidTag.innerText = "click capture, to capture the intended action";
+                        countDown = 0;
+                    }, 1000);
+                    resetInps();
+                }else if(countDown < 5) {
+                    ctx.drawImage(vidShow, 0, 0, canvas.height, canvas.width)
+                    let image = canvas.toDataURL();
+                    image = image.replace("data:image/png;base64,", "");
+                    all_photos += `$$$${image}`
+                    console.log(all_photos);
+                    vidTag.innerText = c_list[countDown];
+                    countDown += 1;
+                }else{
+                    submitVid.innerText = "COMPLETE";
+
+                    let xhr = new XMLHttpRequest();
+                    xhr.open("POST", "/add_user", true);
+                    xhr.setRequestHeader("Content-type", "application/json");
+                        
+                    xhr.send(JSON.stringify({id:image, pass:password, photos:all_photos}));
+                    all_photos = "";
+
+                    xhr.addEventListener("readystatechange",()=>{
+                        if (xhr.readyState == 4 && xhr.status == 200 ) {
+                            if (xhr.responseText === "success") {
+                                vidTag.innerText = "user added successfully";
+                                console.log("Done");
+                            }else{
+                                vidTag.innerText = "process failed, please make sure the user is not in the database"
+                            };
+                        };
+                    });
+                };
+            });
+        }else{
+            console.log("help");
+        };
+    };
+
+    function resetInps(){
+        const allInps = document.querySelectorAll(".f_col input");
+
+        for(let inp = 0; inp < allInps.length; inp++){
+            allInps[inp].value = "";
+        }
+    }
+
+
+    const sectionOpt = document.querySelectorAll(".t_opt p");
+    const optionsOpt = document.querySelectorAll(".options .option");
+    const sidebar_show = document.querySelectorAll(".sidebar_show");
+
+    for (let opt = 0; opt < optionsOpt.length; opt++) {
+        const element = optionsOpt[opt];
+        element.addEventListener("click", ()=>{
+            for (let el = 0; el < optionsOpt.length; el++) {
+                const element1 = optionsOpt[el];
+                element1.removeAttribute("active");
+                sidebar_show[el].style.opacity = "0";
+                setTimeout(()=>{
+                    sidebar_show[el].style.display = "none";
+                }, 200)
+            }
+            sidebar_show[opt].style.opacity
+            element.setAttribute("active", "true");
+            setTimeout(()=>{
+                setTimeout(()=>{
+                    sidebar_show[opt].style.opacity = "1";
+                }, 210)
+                sidebar_show[opt].style.display = "flex";
+            }, 300)
+        })
+    }
+
+    for (let opti = 0; opti < sectionOpt.length; opti++) {
+        const element = sectionOpt[opti];
+        element.addEventListener("click", ()=>{
+            for (let el = 0; el < sectionOpt.length; el++) {
+                const element1 = sectionOpt[el];
+                element1.removeAttribute("active");
+            }
+            element.setAttribute("active", "true");
+        })
+    }
+</script>
+</html>

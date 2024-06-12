@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDO-IS | LOADING....</title>
+    <link rel="shortcut icon" href="../static/logo-170x172.png" type="image/x-icon">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(150deg, rgb(253, 253, 253), rgb(196, 196, 196));
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes skak_ki {
+        10%{
+            margin-top: -10px;
+            margin-left: 10px;
+        }
+        20%{
+            margin-top: 5px;
+            margin-left: -3px;
+        }
+        30%{
+            margin-top: 20px;
+            margin-left: -13px;
+        }
+        40%{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        50%{
+            margin-top: -5px;
+            margin-left: 5px;
+        }
+        60%{
+            margin-top: 0px;
+            margin-left: 12px;
+        }
+        70%{
+            margin-top: 6px;
+            margin-left: 21px;
+        }
+        80%{
+            margin-top: 10px;
+            margin-left: -4px;
+        }
+        90%{
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+    }
+    img{
+        height: 100px;
+        animation: skak_ki cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite 1.5s;
+    }
+</style>
+<body>
+    <img src="../static/logo-170x172.png" alt="">
+</body>
+</html>

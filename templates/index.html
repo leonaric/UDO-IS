@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDO-IS | FYP-PROJECT</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="shortcut icon" href="../static/logo-170x172.png" type="image/x-icon">
+</head>
+<body>
+    <section class="bodd" style="display: none;">
+        <!-- <div class="fralgo-layer" off="f">
+            <div class="loading" off="f">
+            </div>
+            <div class="container" off="f">
+                <h1>FACE RECOGNITION</h1>
+                <div class="userpng">
+                    <div class="scanner"></div>
+                </div>
+                <h3 class="status" success="none">NO MATCHES FOUND</h3>
+                <button>GO BACK</button>
+            </div>
+        </div> -->
+        <div class="face_recog" style="display: none;">
+            <div class="main_inner">
+                <div class="loader">
+                </div>
+                <p>Please setup for face recognition, Remember to press <br>the allow button to cotinue</p>
+                <div class="main_face">
+                    <div class="video" style="height: 0px;">
+                        <div class="scannin"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topper">
+            <div class="header">
+                <div class="main">
+                    <img src="../static/logo-170x172.png" alt="" class="logo">
+                    <p>about</p>
+                    <p>how it works</p>
+                    <p>team</p>
+                </div>
+                <button onclick="requestAuth()"><img src="" alt="">connect</button>
+            </div>
+            <div style="display: none;" onhold="true" class="mainlog">
+                <form class="box-container">
+                    <img src="../static/logo-170x172.png" alt="" class="lologo">
+                    <input required type="text" placeholder="Username" maxlength="30" spellcheck="false">
+                    <input required type="password" placeholder="Password" maxlength="30" spellcheck="false">
+                    <p href="#">Forgot password?<a href="#"> Reset</a></p>
+                    <p class="error" style="opacity: 0;">The password you have entered is not valid, please try egen</p>
+                    <button onclick="callFRecog()">PROCEED</button>
+                </form>
+                
+                <div class="herosec">
+                    <img src="../static/secure.png" class="pad" alt="">
+                </div>
+            </div>
+            <div class="middle">
+                <div class="title">
+                    <h1>REMOTE USER<br>RECOGNITION AND <br><span>ACCESS GRANTING</span></h1>
+                    <!-- <p style="color: black; font-family: calibri; margin-top: 20px;">Join our new system and enjoy our scurity and services <br>click the button to continue to login</p> -->
+                    <div class="btn">
+                        <button>PROCEED TO LOGIN</button>
+                        <p>Unlimited period usage</p>
+                    </div>
+                </div>
+                <div class="herosec">
+                    <img src="../static/cyber.png" class="robot" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <!-- <div class="arrow"></div> -->
+            <div class="justify">
+                <div class="step">
+                    <img src="../static/lock.png" alt="">
+                    <p>Enter user credentials <br>username and password <br>to verify stage one</p>
+                </div>
+                <div class="step">
+                    <img src="../static/face-recognition.png" alt="">
+                    <p>Go through face <br>recognition for further <br> assuarance on your identity</p>
+                </div>
+                <div class="step">
+                    <img src="../static/folder.png" alt="">
+                    <p>In folder data <br>collection for end-to-end <br>encription</p>
+                </div>
+                <div class="step">
+                    <img src="../static/shield.png" alt="">
+                    <p>Unique encription <br>on databases to ensure <br>unique security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="android">
+            <div class="topping">
+                <button onclick="requestAuth()">connect</button>
+                <img src="../static/logo-170x172.png" alt="" class="logo">
+            </div>
+            <img src="../static/secure.png" style="display: none;" alt="">
+            <h1>REMOTE USER<br>RECOGNITION AND <br><span>ACCESS GRANTING</span></h1>
+            <button onclick="open_sessami()">Login</button>
+        </div>
+        <form class="login_" off="t">
+            <input type="text" placeholder="Username" spellcheck="false" required>
+            <input type="password" placeholder="Password" spellcheck="false" required>
+            <p>forgot password? <a href="#">here.</a></p>
+            <p></p>
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+</body>
+<script src="../static/index.js"></script>
+</html>
